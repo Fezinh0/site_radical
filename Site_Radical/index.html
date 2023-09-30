@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mova- se [Página principal]</title>
+    <meta name="description"
+        content="O mova-se é um site educacional, com a proposta de fazer reservas e pacotes de viagens com esportes radicais.">
+    <!-- CSS do plugin slick-->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <!-- CSS externo-->
+    <link rel="Stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="icon" href="imagem/logo.png">
+</head>
+
+<body>
+    <header id="topo">
+
+        <div>
+            <h1>
+                <a href="index.html"><img src="imagem/logo.png" alt="Logotipo"></a>
+            </h1>
+            <nav>
+                <a href="index.html" tabindex="1">Home</a> <!--Tabindex é utilizado para a acessibilidade-->
+                <a href="pacotes.html" tabindex="2">Pacotes</a>
+                <a href="acessorios.html" tabindex="3">Acessórios</a>
+                <a href="contato.php" tabindex="4">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        
+        <article class="cont-home">
+
+        <div class="destaque" id="destaque">
+
+            <div class="cont-destaque">
+                <img class="img_destaque" src="imagem/montanha.jpg" alt="Imagen: Vale com montanhas">
+                <div class="text-destaque">
+                    <h2>Montanha</h2>
+                    <p>Explore trilhas e cachoeiras em lugares incríveis</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="img_destaque" src="imagem/arvores.jpg" alt="Imagen: Bosque com árvores">
+                <div class="text-destaque">
+                    <h2>Terrestres</h2>
+                    <p>Explore trilhas e cachoeiras em lugares incríveis</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="img_destaque" src="imagem/paisagem.jpg" alt="Imagen: Lago">
+                <div class="text-destaque">
+                    <h2>Aquatico</h2>
+                    <p>Explore rios e cachoeiras.</p>
+                </div>
+            </div>
+        </div>
+        </article>
+
+        <aside id="frase">
+            <p>
+                "Silêncio, a mãe natureza está esperando sua conexão."<br>Amara Antara
+            </p>
+        </aside>
+
+        <article class="card">
+            <h2 class="titulo">Pacotes</h2>
+            <p>Veja os pacotes disponíveis:</p>
+            
+            <div class="card-conteudo">
+                <figure>
+                    <img src="imagem/capa-terrestre.jpg" alt="Terrestre">
+                    <figcaption>Terrestre</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagem/escalada.jpg" alt="Escalada">
+                    <figcaption>Escalada</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagem/rafting.jpg" alt="Rafting">
+                    <figcaption>Rafting</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagem/asa-delta.jpg" alt="Aéreo">
+                    <figcaption>Aéreo</figcaption>
+                </figure>
+            </div>
+        </article>
+        
+        <article>
+            <div id="video">
+                <h2 class="titulo" id="titulo-video">Vídeo Radical</h2>
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/LPO5BZnzuIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+
+    </main>
+    
+    <footer class="rodape">
+        
+        <div class="rodape-conteudo">
+
+            <div id="logo-rodape">
+                <a href="index.html"><img src="imagem/logo.png" alt="Logotipo"></a>
+            </div>
+
+            <div class="menu-rodape">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Terrestre</a></li>
+                    <li><a href="#">Montanha</a></li>
+                    <li><a href="#">Aquático</a></li>
+                    <li><a href="#">Aéreo</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-rodape">
+                <ul>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <aside>
+                    <img src="imagem/facebook.png" alt="Logo do Facebook">
+                    <img src="imagem/insta.png" alt="Logo do Instagram">
+                    <img src="imagem/youtube.png" alt="Logo do YouTube">
+                </aside>
+            </div>
+        </div>
+        
+        <div class="assinatura">
+            <p>Desenvolvido por <b>Fernando Oliveira</b> Site acadêmico | Todos os direitos reservados | SENAC TITO &copy; 2023</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#destaque').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots:true,
+            arrow:false
+        });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

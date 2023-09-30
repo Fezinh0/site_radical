@@ -1,0 +1,585 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*
+Criando regras usando o fluxo de trabalho MOBILE FIRST.
+
+Todas as regras declaradas a partir deste ponto serão voltadas ao site com telas 
+MOBILE ou seja pequenas. 
+
+Posteriormente, criaremos as Medias Queries com somente os ajustes necessários
+para a exibição de em telas grandes/desktop.
+
+OBS: Regras criadas nesta abordagem também serão validas para o site como
+ um todo, ou seja, independente do tamanho da tela que será exibido.
+*/
+
+
+/* Regras para o topo*/
+/* corpo da página */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../imagem/hypnotize.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* texto e afins */
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* imagens da página */
+img {
+    max-width: 100%;
+}
+
+/* Regras para o topo*/
+
+
+/* header */
+#topo {
+    background-color: rgb(24, 56, 29, 0.9);
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* logo */
+h1 img {
+    margin-top: 5px;
+    width: 200px;
+}
+
+/* menu de navegação/ ou botões */
+nav {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 1%;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s;
+    /* transição do hover */
+    padding: 14px 25px;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #a98e12;
+    color: #000;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+/* Regras para o rodapé */
+/* footer/rodape inicio */
+.rodape {
+    border-top: solid #06632e 5px;
+    background-color: #000;
+    color: #7f7f80;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape p {
+    font-size: 14px;
+}
+
+.rodape aside {
+    margin: 25px;
+}
+
+.rodape img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.rodape-conteudo ul {
+    list-style: none;
+}
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150px;
+    margin-top: 42px;
+    margin-left: 10px;
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: #7f7f80;
+}
+
+.menu-rodape a:link {
+    color: #fff;
+}
+
+.redes img {
+    min-width: 35px;
+    width: 35px;
+}
+
+.redes ul {
+    display: flex;
+    text-align: center;
+}
+
+.redes li {
+    width: 15%;
+    padding: 3%;
+}
+
+.assinatura {
+    color: #fff;
+    background-color: #7f7f80;
+    text-align: center;
+    height: 50px;
+}
+
+.assinatura p {
+    padding-top: 3%;
+}
+
+/* Footer/ rodape fim */
+
+/* Regra para a área de conteúdo principal.*/
+
+/* Definimos uma largura máxima um pouco menor do que a tela 
+   toda e centralizamos com a margem em automático. */
+#conteudo {
+    max-width: 95%;
+    margin: auto;
+}
+
+#conteudo article {
+    background-color: white;
+    margin: 15px 0;
+    padding: 1%;
+    box-shadow: gray 1px 1px 5px;
+}
+
+.img_destaque {
+   height: 100%;
+   width: 100%;
+}
+
+#conteudo h2,
+#conteudo h3,
+#conteudo p {
+    padding: 1%;
+}
+
+.titulo {
+    font-size: 2em;
+    color: #ed6d19;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.destaque img {
+    border-bottom: dotted #ed6d19 5px;
+}
+
+.text-destaque {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 80px;
+    bottom: 140px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.text-destaque h2 {
+    color: #000 !important;
+    /* Friza o efeito aplicado, cancelando todos os outros */
+    margin-top: 5px;
+    padding: 5px 0 3px 50px;
+}
+
+.text-destaque p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    padding: 0 5px 5px;
+}
+
+.cont-home {
+    height: 290px;
+}
+
+#frase {
+    color: #fff;
+    background-color: #ed6d19;
+    text-align: center;
+    height: 80px;
+}
+
+#frase p {
+    font-size: 1em;
+    padding: 12px;
+}
+
+/* Regras para os articles contidos no #conteúdo*/
+
+.card {
+    margin: 15px 0;
+    padding: 5%;
+}
+
+.card p {
+    text-align: center;
+    padding: 1% 0 2% 0;
+}
+
+.card-conteudo figure {
+    margin: 1%;
+    position: relative;
+    box-shadow: grey 1px 1px 5px;
+}
+
+.card-conteudo figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    background-color: rgba(127, 127, 128, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-conteudo img {
+    transition: 1s;
+    filter: opacity(1);
+}
+
+.card-conteudo a:link img,
+.card-conteudo a:focus img {
+    filter: opacity(0.6);
+}
+
+#titulo-video {
+    color: #fff;
+    padding: 15px;
+}
+
+#video {
+    width: 100%;
+    background-color: rgba(6, 99, 46, 0.5);
+    text-align: center;
+}
+
+iframe {
+    margin: auto;
+    max-width: 80%;
+    display: block;
+    padding: 2% 0;
+}
+
+/*Regras para formulário*/
+#form-contato {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+
+#form-contato input,
+#form-contato textarea {
+    border: solid 2px black;
+    width: 375px;
+    margin: 4px auto;
+}
+
+#nome,
+#email,
+#telefone {
+    margin-left: 5px;
+}
+
+/* Regra para o label (rótulo dos campos)*/
+#form-contato label {
+    font-weight: bold;
+}
+
+/* Regra para o botão*/
+#form-contato button {
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    color: white;
+}
+
+#form-contato button:hover,
+#form-contato button:focus {
+    background-color: #ED6D19;
+    cursor: pointer;
+    /*Cursor mãozinha*/
+}
+
+.conteudo-info p {
+    margin: 5%;
+}
+
+.localizacao p {
+    text-align: center;
+}
+
+/*Página pacote*/
+#card-pacote {
+    background-color: rgba(6, 99, 46, 0.5);
+    /* display: flex;*/
+    padding: 10px;
+    text-align: center;
+}
+
+.card-pacote-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+    box-shadow: grey 1px 1px 5px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.pac-fotos,
+.pac-reserva {
+    background-color: #A98E12;
+    color: #000;
+    width: 80px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.pac-flex {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pac-fotos a:hover,
+.pac-reserva a:hover {
+    background-color: #ecda87;
+    color: #fff;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+.pac-fotos a:link,
+.pac-reserva a:link,
+.pac-fotos a:visited,
+.pac-reserva a:visited {
+    color: #000;
+    transition: background-color 0.5s;
+    min-height: inherit;
+    padding: 1px 8px;
+    text-decoration: none;
+}
+
+
+/* pagina acessorios */
+.acessorios {
+    margin: auto;
+    padding: 15px;
+}
+
+.produtos img {
+    border: solid #7F7F80 3px;
+    border-radius: 100%;
+    box-shadow: gray 1px 1px 5px;
+    margin: 10 pxauto;
+}
+
+.produtos {
+    box-shadow: gray 1px 1px 5px;
+    text-align: center;
+    padding: 20px;
+    width: 360px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.produtos h4 {
+    color: #ed6d19;
+    text-transform: uppercase;
+}
+
+.img-produto img {
+    width: 100px;
+    height: 100px;
+}
+
+.acesse {
+    text-transform: uppercase;
+    background-color: #ed6d19;
+    width: 100px;
+    height: 20px;
+    padding: 3px;
+    margin: -10px auto;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Trabalhando com as midias querys regras com ajustes para a visualização do site/conteúdo 
+em tamanhos de telas maiores (breakpoints)*/
+
+/* 1º Breakpoints */
+@media (min-width: 700px) {
+
+    #topo {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 80px;
+        z-index: 1000;
+        /* Joga o elemento para cima de todos os outros elementos*/
+    }
+
+    #topo div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin-left: 3%;
+        margin-top: 5px;
+        width: 150px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #conteudo {
+        margin-top: 85px;
+    }
+
+    .assinatura {
+        height: 20px;
+    }
+
+    .assinatura p {
+        padding-top: 1%;
+    }
+
+    .card-conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-pacote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-pacote-info {
+        margin: 0.4%;
+    }
+
+    .acessorios {
+        margin: 0 15%;
+    }
+
+    .cont-home {
+        height: 370px;
+    }
+}
+
+/* 2º BREAKPOINT */
+
+@media (min-width:850px){
+
+    .card-conteudo figure img {
+        height: 150px;
+        width: 210px;
+    }
+    
+    .text-destaque h2 {
+         margin-top: -4px;
+    }   
+    
+    .text-destaque p {
+        margin-top: -11px;
+    }
+    
+    .acessorios {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .produtos {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #conteudo-contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cont-contato {
+        height: 850px;
+        }
+    
+    #localizacao iframe{
+        height: 500px;
+    }
+    
+    #conteudo-contato iframe{
+        height: 500px;
+    }
+} 
+
+/* 3º BREAKPOINT */
+
+@media (min-width: 900px){
+    
+    nav{
+        width: 700px;
+    }
+
+    #conteudo {
+        width: 900px;
+    }
+
+    .cont-home {
+        height: 430px;
+    }
+}
