@@ -77,7 +77,7 @@ nav a:visited {
     color: white;
     transition: background-color 1s;
     /* transição do hover */
-    padding: 14px 25px;
+    padding: 14px 10px;
     min-height: inherit;
     display: flex;
     justify-content: center;
@@ -101,6 +101,7 @@ nav a:focus {
     color: #7f7f80;
     text-align: center;
     width: 100%;
+  
 }
 
 .rodape p {
@@ -112,11 +113,13 @@ nav a:focus {
 }
 
 .rodape img {
+    width: 50%;
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .rodape-conteudo {
+    margin: 0 0px 0 -50px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -315,7 +318,7 @@ iframe {
 #form-contato input,
 #form-contato textarea {
     border: solid 2px black;
-    width: 375px;
+    width: 80%;
     margin: 4px auto;
 }
 
@@ -428,7 +431,7 @@ iframe {
     box-shadow: gray 1px 1px 5px;
     text-align: center;
     padding: 20px;
-    width: 360px;
+    width: 80%;
     height: 200px;
     margin: 0 auto;
     border-radius: 5%;
